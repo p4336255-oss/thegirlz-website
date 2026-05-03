@@ -1,21 +1,34 @@
+
+Thegirlz <p4336255@gmail.com>
+2:56 PM (0 minutes ago)
+to me
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>thegirlz.inc | Official</title>
+<title>thegirlz.inc | PHOEBE</title>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Syne:wght@800&family=Special+Elite&display=swap" rel="stylesheet">
 <style>
 body {
 margin: 0;
 background-color: #050505;
-background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+/* High-Intensity Star Field */
+background-image:
+radial-gradient(2px 2px at 20px 30px, #eee, rgba(0,0,0,0)),
+radial-gradient(2px 2px at 40px 70px, #fff, rgba(0,0,0,0)),
+radial-gradient(2px 2px at 50px 160px, #ddd, rgba(0,0,0,0)),
+radial-gradient(2px 2px at 90px 40px, #fff, rgba(0,0,0,0)),
+radial-gradient(2px 2px at 130px 80px, #fff, rgba(0,0,0,0)),
+radial-gradient(2px 2px at 160px 120px, #eee, rgba(0,0,0,0));
+background-repeat: repeat;
+background-size: 200px 200px;
 color: #ffb6c1;
 text-align: center;
 font-family: 'Special Elite', cursive;
 scroll-behavior: smooth;
 }
 
-/* Top Branding Bar */
 .header-bar {
 background: linear-gradient(90deg, #ff00ff, #00ffff);
 padding: 8px;
@@ -23,155 +36,162 @@ font-family: 'Orbitron', sans-serif;
 font-size: 11px;
 color: #000;
 text-transform: uppercase;
-border-bottom: 3px solid #222;
 letter-spacing: 4px;
+position: sticky;
+top: 0;
+z-index: 1000;
 }
 
-/* Navigation Tabs */
+/* Spray Paint Title Effect */
+.main-title {
+font-family: 'Syne', sans-serif;
+font-size: clamp(50px, 10vw, 100px);
+color: #fff;
+text-transform: uppercase;
+margin-top: 60px;
+margin-bottom: 0;
+/* This creates the fuzzy spray paint look */
+text-shadow:
+0 0 5px #fff,
+0 0 10px #ff00ff,
+0 0 20px #ff00ff,
+2px 2px 2px rgba(0,0,0,0.8);
+letter-spacing: -2px;
+}
+
+.sub-brand {
+font-family: 'Orbitron', sans-serif;
+font-size: 14px;
+letter-spacing: 8px;
+color: #00ffff;
+text-shadow: 0 0 8px #00ffff;
+margin-bottom: 40px;
+}
+
 .nav-tabs {
 display: flex;
 justify-content: center;
-gap: 12px;
-margin-top: 20px;
+gap: 15px;
+margin-bottom: 50px;
 }
 
 .tab {
-padding: 8px 15px;
-border: 1px solid #ffb6c1;
+padding: 10px 20px;
+border: 2px solid #ffb6c1;
 color: #ffb6c1;
 text-decoration: none;
-font-size: 14px;
-background: rgba(255, 182, 193, 0.05);
 font-family: 'Orbitron', sans-serif;
+font-size: 12px;
+background: rgba(0,0,0,0.8);
 transition: 0.2s;
 }
 
 .tab:hover {
 background: #ffb6c1;
 color: #000;
-box-shadow: 4px 4px 0px #00ffff;
+box-shadow: 0 0 15px #ffb6c1;
 }
 
-/* Portal Splash Screen */
-.portal-screen {
-height: 100vh;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-}
-
-.brand-title {
-font-family: 'Syne', sans-serif;
-font-size: clamp(50px, 10vw, 90px);
-margin: 0;
-color: #fff;
-text-transform: uppercase;
-text-shadow: 4px 4px 0px #ff00ff, -3px -3px 0px #00ffff;
-letter-spacing: -4px;
-}
-
-.enter-btn {
-margin-top: 40px;
-padding: 12px 40px;
-background: transparent;
-border: 2px solid #fff;
-color: #fff;
-font-family: 'Orbitron', sans-serif;
-cursor: pointer;
-text-decoration: none;
-font-size: 14px;
-transition: 0.3s;
-}
-
-.enter-btn:hover {
-background: #fff;
-color: #000;
-box-shadow: 0 0 15px #fff;
-}
-
-/* Main Page Content */
-.main-page {
-padding: 80px 20px;
-background: rgba(0, 0, 0, 0.9);
-border-top: 2px solid #222;
-}
-
+/* Clickable Service Cards */
 .services-grid {
 display: flex;
 justify-content: center;
 gap: 20px;
 flex-wrap: wrap;
-margin-top: 40px;
+padding: 0 20px;
 }
 
 .card {
-border: 1px dashed #ffb6c1;
-padding: 25px;
-width: 240px;
-background: #000;
+border: 2px solid #fff;
+padding: 30px;
+width: 180px;
+background: rgba(0,0,0,0.6);
+text-decoration: none;
+color: #fff;
 transition: 0.3s;
+box-shadow: 5px 5px 0px #ff00ff; /* Grunge offset */
 }
 
 .card:hover {
-border-style: solid;
+transform: rotate(-2deg) scale(1.1);
+background: #fff;
+color: #000;
+box-shadow: 8px 8px 0px #00ffff;
+}
+
+/* Portfolio Section */
+.portfolio-section {
+margin-top: 100px;
+padding: 60px 20px;
+background: rgba(255, 255, 255, 0.03);
+border-top: 1px solid #333;
+}
+
+.portfolio-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 20px;
+max-width: 1000px;
+margin: 30px auto;
+}
+
+.work-sample {
+aspect-ratio: 1/1;
+border: 1px solid #444;
 background: #111;
-transform: translateY(-5px);
-}
-
-.card h3 {
-font-family: 'Orbitron', sans-serif;
-font-size: 16px;
-color: #fff;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 10px;
 text-transform: uppercase;
-margin-bottom: 15px;
+opacity: 0.6;
 }
-
-.card p {
-font-size: 16px;
-line-height: 1.4;
-}
-
-h2 { font-family: 'Orbitron'; font-size: 20px; color: #fff; }
 </style>
 </head>
 <body>
 
-<div class="header-bar">
-THEGIRLZ.INC // MENU_ESTABLISHED_2026
-</div>
+<div class="header-bar">DATABASE_01 // THEGIRLZ.INC // EST. 2026</div>
 
-<div class="portal-screen">
-<h1 class="brand-title">THE GIRLZ</h1>
-<p style="font-size: 18px; color: #ffb6c1; margin-top: 10px;">[ SELECT YOUR SERVICE ]</p>
-<a href="#main" class="enter-btn">ENTER PORTAL</a>
-</div>
+<h1 class="main-title">THE GIRLZ</h1>
+<div class="sub-brand">BY PHOEBE</div>
 
-<div id="main" class="main-page">
 <nav class="nav-tabs">
-<a href="#" class="tab">HOME</a>
 <a href="#services" class="tab">SERVICES</a>
-<a href="#" class="tab">VAULT</a>
+<a href="#portfolio" class="tab">PORTFOLIO</a>
+<a href="mailto:contact@thegirlz.inc" class="tab">CONTACT US</a>
 </nav>
 
-<div id="services" style="margin-top: 60px;">
-<h2>[ SERVICES ]</h2>
+<div id="services">
 <div class="services-grid">
-<div class="card">
-<h3>HAIR</h3>
-<p>Cut, color, and grunge styling. Messy vibes or sleek finish.</p>
+<a href="#portfolio" class="card">
+<h3 style="font-family: Orbitron;">HAIR</h3>
+<p style="font-size: 12px;">The Cut. The Color. The Vibe.</p>
+</a>
+<a href="#portfolio" class="card">
+<h3 style="font-family: Orbitron;">NAILS</h3>
+<p style="font-size: 12px;">3D Art & Heavy Charms.</p>
+</a>
+<a href="#portfolio" class="card">
+<h3 style="font-family: Orbitron;">LASHES</h3>
+<p style="font-size: 12px;">Volume & Wispy Sets.</p>
+</a>
 </div>
-<div class="card">
-<h3>NAILS</h3>
-<p>Custom sets, 3D art, and y2k charms. Precision work only.</p>
 </div>
-<div class="card">
-<h3>LASHES</h3>
-<p>Volume, wispy, and mega sets for the ultimate look.</p>
+
+<div id="portfolio" class="portfolio-section">
+<h2 style="font-family: Orbitron; letter-spacing: 10px;">PORTFOLIO</h2>
+<div class="portfolio-grid">
+<div class="work-sample">loading_file_01</div>
+<div class="work-sample">loading_file_02</div>
+<div class="work-sample) ">loading_file_03</div>
+<div class="work-sample">loading_file_04</div>
 </div>
 </div>
-</div>
-</div>
+
+<footer style="padding: 100px; opacity: 0.2; font-size: 12px;">
+&copy; 2026 THEGIRLZ.INC // ALL RIGHTS RESERVED
+</footer>
 
 </body>
 </html>
+
