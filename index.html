@@ -1,153 +1,177 @@
-
-Thegirlz <p4336255@gmail.com>
-2:33 PM (0 minutes ago)
-to me
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <title>thegirlz.inc | Official</title>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Playfair+Display&family=Syne:wght@800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Syne:wght@800&family=Special+Elite&display=swap" rel="stylesheet">
 <style>
 body {
 margin: 0;
-background: #000;
-color: white;
+background-color: #050505;
+background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+color: #ffb6c1;
 text-align: center;
-font-family: 'Playfair Display', serif;
-overflow-x: hidden;
+font-family: 'Special Elite', cursive;
+scroll-behavior: smooth;
 }
 
-/* Y2K Header Bar */
+/* Top Branding Bar */
 .header-bar {
 background: linear-gradient(90deg, #ff00ff, #00ffff);
-padding: 10px;
+padding: 8px;
 font-family: 'Orbitron', sans-serif;
-font-size: 14px;
-color: black;
-font-weight: bold;
-letter-spacing: 2px;
+font-size: 11px;
+color: #000;
 text-transform: uppercase;
+border-bottom: 3px solid #222;
+letter-spacing: 4px;
 }
 
 /* Navigation Tabs */
 .nav-tabs {
 display: flex;
 justify-content: center;
-gap: 15px;
+gap: 12px;
 margin-top: 20px;
 }
 
 .tab {
-padding: 10px 20px;
-border: 2px solid #00ffff;
-border-radius: 50px;
-color: #00ffff;
+padding: 8px 15px;
+border: 1px solid #ffb6c1;
+color: #ffb6c1;
 text-decoration: none;
+font-size: 14px;
+background: rgba(255, 182, 193, 0.05);
 font-family: 'Orbitron', sans-serif;
-font-size: 12px;
-transition: 0.3s;
-cursor: pointer;
+transition: 0.2s;
 }
 
 .tab:hover {
-background: #00ffff;
-color: black;
-box-shadow: 0 0 15px #00ffff;
+background: #ffb6c1;
+color: #000;
+box-shadow: 4px 4px 0px #00ffff;
 }
 
-/* Main Title Section */
-.hero-section {
-padding: 60px 20px;
+/* Portal Splash Screen */
+.portal-screen {
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 
 .brand-title {
 font-family: 'Syne', sans-serif;
-font-size: 65px;
-margin-bottom: 0;
-background: linear-gradient(to bottom, #fff, #ff00ff);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-filter: drop-shadow(0 0 10px rgba(255, 0, 255, 0.5));
+font-size: clamp(50px, 10vw, 90px);
+margin: 0;
+color: #fff;
+text-transform: uppercase;
+text-shadow: 4px 4px 0px #ff00ff, -3px -3px 0px #00ffff;
+letter-spacing: -4px;
 }
 
-.services-container {
-margin-top: 50px;
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-gap: 20px;
-padding: 0 40px;
-}
-
-.service-card {
-border: 1px solid rgba(255, 255, 255, 0.2);
-padding: 20px;
-border-radius: 15px;
-background: rgba(255, 255, 255, 0.05);
-backdrop-filter: blur(5px);
-}
-
-.service-card h3 {
+.enter-btn {
+margin-top: 40px;
+padding: 12px 40px;
+background: transparent;
+border: 2px solid #fff;
+color: #fff;
 font-family: 'Orbitron', sans-serif;
-color: #ff00ff;
+cursor: pointer;
+text-decoration: none;
+font-size: 14px;
+transition: 0.3s;
 }
+
+.enter-btn:hover {
+background: #fff;
+color: #000;
+box-shadow: 0 0 15px #fff;
+}
+
+/* Main Page Content */
+.main-page {
+padding: 80px 20px;
+background: rgba(0, 0, 0, 0.9);
+border-top: 2px solid #222;
+}
+
+.services-grid {
+display: flex;
+justify-content: center;
+gap: 20px;
+flex-wrap: wrap;
+margin-top: 40px;
+}
+
+.card {
+border: 1px dashed #ffb6c1;
+padding: 25px;
+width: 240px;
+background: #000;
+transition: 0.3s;
+}
+
+.card:hover {
+border-style: solid;
+background: #111;
+transform: translateY(-5px);
+}
+
+.card h3 {
+font-family: 'Orbitron', sans-serif;
+font-size: 16px;
+color: #fff;
+text-transform: uppercase;
+margin-bottom: 15px;
+}
+
+.card p {
+font-size: 16px;
+line-height: 1.4;
+}
+
+h2 { font-family: 'Orbitron'; font-size: 20px; color: #fff; }
 </style>
 </head>
 <body>
 
 <div class="header-bar">
-CONNECTED TO // THEGIRLZ.INC
+THEGIRLZ.INC // MENU_ESTABLISHED_2026
 </div>
 
+<div class="portal-screen">
+<h1 class="brand-title">THE GIRLZ</h1>
+<p style="font-size: 18px; color: #ffb6c1; margin-top: 10px;">[ SELECT YOUR SERVICE ]</p>
+<a href="#main" class="enter-btn">ENTER PORTAL</a>
+</div>
+
+<div id="main" class="main-page">
 <nav class="nav-tabs">
 <a href="#" class="tab">HOME</a>
 <a href="#services" class="tab">SERVICES</a>
-<a href="#" class="tab">ABOUT</a>
-<a href="#" class="tab">CONTACT</a>
+<a href="#" class="tab">VAULT</a>
 </nav>
 
-<div class="hero-section">
-<h1 class="brand-title">PHOEBE ✨</h1>
-<p style="font-style: italic; opacity: 0.7;">loading the future...</p>
-
-<button style="
-margin-top:20px;
-padding:15px 40px;
-border:none;
-border-radius:5px;
-background:#fff;
-color:#000;
-font-family: 'Orbitron', sans-serif;
-font-weight: bold;
-cursor:pointer;
-text-transform: uppercase;
-" onclick="alert('System Active 💿')">
-Enter Portal
-</button>
+<div id="services" style="margin-top: 60px;">
+<h2>[ SERVICES ]</h2>
+<div class="services-grid">
+<div class="card">
+<h3>HAIR</h3>
+<p>Cut, color, and grunge styling. Messy vibes or sleek finish.</p>
 </div>
-
-<div id="services" class="hero-section">
-<h2 style="font-family: 'Orbitron', sans-serif;">OUR SERVICES</h2>
-<div class="services-container">
-<div class="service-card">
-<h3>Creative</h3>
-<p>Digital design and aesthetic curation.</p>
+<div class="card">
+<h3>NAILS</h3>
+<p>Custom sets, 3D art, and y2k charms. Precision work only.</p>
 </div>
-<div class="service-card">
-<h3>Development</h3>
-<p>Web builds and code architecture.</p>
+<div class="card">
+<h3>LASHES</h3>
+<p>Volume, wispy, and mega sets for the ultimate look.</p>
 </div>
-<div class="service-card">
-<h3>Strategy</h3>
-<p>Planning the next big move.</p>
 </div>
 </div>
 </div>
 
 </body>
 </html>
-
-
-On Sun, May 3, 2026 at 2:33 PM Thegirlz <p4336255@gmail.com> wrote:
-
