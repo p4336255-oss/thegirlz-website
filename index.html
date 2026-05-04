@@ -1,105 +1,149 @@
 
+Thegirlz <p4336255@gmail.com>
+9:09 PM (0 minutes ago)
+to me
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <title>thegirlz.inc | Official HQ</title>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Syne:wght@800&family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Syne:wght@800&family=Sedgwick+Ave+Display&family=VT323&display=swap" rel="stylesheet">
 <style>
 body {
 margin: 0;
 background-color: #050505;
 background-image:
 url('image.png'),
-radial-gradient(circle at 20% 30%, rgba(255, 0, 255, 0.15) 0%, transparent 50%),
+radial-gradient(circle at 20% 30%, rgba(255, 0, 255, 0.2) 0%, transparent 50%),
 url('https://www.transparenttextures.com/patterns/stardust.png');
 background-repeat: repeat;
-background-size: 400px, cover, auto;
+background-size: 500px, cover, auto;
 background-blend-mode: screen;
 background-attachment: fixed;
 color: #ffb6c1;
 text-align: center;
 font-family: 'Syne', sans-serif;
 scroll-behavior: smooth;
+overflow-x: hidden;
 }
 
-/* --- DOODLES --- */
-.doodle { position: fixed; font-family: 'Sedgwick Ave Display'; font-size: 50px; color: #ff00ff; text-shadow: 0 0 15px #ff00ff; z-index: 1500; pointer-events: none; opacity: 0.8; }
-.d-1 { top: 10%; left: 5%; transform: rotate(-20deg); }
-.d-2 { bottom: 10%; right: 5%; transform: rotate(15deg); }
+/* --- ENHANCED DOODLES --- */
+.doodle {
+position: fixed;
+font-family: 'Sedgwick Ave Display';
+color: #ff00ff;
+text-shadow: 0 0 15px #ff00ff, 0 0 5px #fff;
+z-index: 1500;
+pointer-events: none;
+opacity: 0.9;
+filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.8));
+}
+.heart-1 { top: 5%; left: 2%; font-size: 60px; transform: rotate(-15deg); }
+.heart-2 { bottom: 15%; left: 5%; font-size: 45px; transform: rotate(10deg); }
+.star-1 { top: 15%; right: 4%; font-size: 40px; color: #00ffff; text-shadow: 0 0 15px #00ffff; }
+.star-2 { bottom: 5%; right: 8%; font-size: 55px; transform: rotate(20deg); }
+.smile-x { top: 45%; left: 1%; font-size: 40px; transform: rotate(-90deg); }
 
 .header-bar {
 background: linear-gradient(90deg, #ff00ff, #00ffff);
-padding: 10px; font-family: 'Orbitron'; font-size: 11px; color: #000; letter-spacing: 5px; position: sticky; top: 0; z-index: 2000;
+padding: 12px; font-family: 'Orbitron'; font-size: 11px; color: #000; letter-spacing: 5px; position: sticky; top: 0; z-index: 2000;
+font-weight: bold;
 }
 
 .brand-title {
 font-family: 'Sedgwick Ave Display', cursive;
 font-size: clamp(70px, 15vw, 150px);
-color: #fff; margin-top: 40px; text-shadow: 0 0 20px #ff00ff;
+color: #fff; margin-top: 40px;
+text-shadow: 0 0 10px #fff, 0 0 30px #ff00ff, 0 0 60px #ff00ff;
+letter-spacing: -2px;
 }
 
-/* --- SERVICE SECTIONS --- */
+/* --- CLICKABLE SERVICE SECTIONS --- */
 .section-container {
-padding: 60px 20px; max-width: 1100px; margin: 0 auto 40px;
-background: rgba(0,0,0,0.85); border: 2px solid #ff00ff;
-box-shadow: 10px 10px 0px #00ffff;
+padding: 60px 20px; max-width: 1000px; margin: 0 auto 60px;
+background: rgba(0,0,0,0.88); border: 2px solid #ff00ff;
+box-shadow: 12px 12px 0px #00ffff;
+position: relative;
 }
 
 .service-flex {
-display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center; gap: 20px;
+display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center; gap: 30px;
 }
 
-.service-main-title { font-family: 'Sedgwick Ave Display'; font-size: 60px; color: #fff; margin: 0; }
+.service-main-title {
+font-family: 'Sedgwick Ave Display'; font-size: clamp(50px, 8vw, 80px);
+color: #fff; margin: 0; text-shadow: 0 0 15px #00ffff;
+}
 
 .sub-services-list {
-text-align: left; font-family: 'Orbitron'; font-size: 18px; line-height: 2; color: #00ffff;
-list-style: "→ ";
+text-align: left; font-family: 'Orbitron'; font-size: 18px; line-height: 2.5;
+list-style: none; padding: 0;
 }
 
-/* --- ROSTER --- */
+/* Clickable Sub-Options */
+.sub-services-list a {
+color: #00ffff;
+text-decoration: none;
+transition: 0.3s;
+display: block;
+border-bottom: 1px solid transparent;
+}
+
+.sub-services-list a:hover {
+color: #fff;
+text-shadow: 0 0 10px #ff00ff;
+padding-left: 10px;
+border-bottom: 1px solid #ff00ff;
+}
+
+/* --- THE CREW --- */
 .roster-grid {
-display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-gap: 20px; padding: 20px;
+display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+gap: 15px; padding: 20px;
 }
 .profile-card {
 background: #000; border: 1px solid #fff; padding: 20px; transition: 0.3s;
+box-shadow: 5px 5px 0px #333;
 }
-.profile-card:hover { border-color: #ff00ff; transform: scale(1.05); }
+.profile-card:hover { border-color: #ff00ff; transform: rotate(-2deg); box-shadow: 8px 8px 0px #ff00ff; }
 .pfp-placeholder {
-width: 80px; height: 80px; border-radius: 50%; background: #111;
-border: 2px solid #00ffff; margin: 0 auto 10px;
+width: 70px; height: 70px; border-radius: 50%; background: #111;
+border: 2px solid #00ffff; margin: 0 auto 10px; overflow: hidden;
 }
 
-/* --- LINKS --- */
+/* --- SOCIAL HUB --- */
 .links-box {
-max-width: 500px; margin: 80px auto; padding: 30px; border: 2px solid #fff;
+max-width: 500px; margin: 100px auto; padding: 40px;
+background: #000; border: 3px double #fff;
 }
 .main-link {
-display: block; padding: 10px; margin: 10px 0; border: 1px solid #ffb6c1;
-color: #fff; text-decoration: none; font-family: 'Orbitron';
+display: block; padding: 15px; margin: 12px 0; border: 1px solid #ffb6c1;
+color: #fff; text-decoration: none; font-family: 'Orbitron'; transition: 0.3s;
 }
-.main-link:hover { background: #ff00ff; color: #fff; }
+.main-link:hover { background: #fff; color: #000; letter-spacing: 3px; }
 
-footer { padding: 60px; font-family: 'Orbitron'; color: #fff; }
+footer { padding: 80px; font-family: 'VT323', monospace; color: #fff; font-size: 20px; letter-spacing: 2px; }
 
 /* Side Nav */
 .side-nav {
 height: 100%; width: 0; position: fixed; z-index: 3000;
-top: 0; right: 0; background: #000; border-left: 3px solid #ff00ff;
+top: 0; right: 0; background: rgba(0,0,0,0.95); border-left: 3px solid #ff00ff;
 transition: 0.5s; padding-top: 60px; text-align: left; overflow-x: hidden;
 }
-.side-nav a { padding: 15px 30px; text-decoration: none; font-size: 18px; color: #fff; display: block; font-family: 'Orbitron'; }
+.side-nav a { padding: 15px 30px; text-decoration: none; font-size: 18px; color: #fff; display: block; font-family: 'Orbitron'; border-bottom: 1px solid #222; }
 </style>
 </head>
 <body>
 
-<div class="doodle d-1">♡</div>
-<div class="doodle d-2">ツ</div>
+<div class="doodle heart-1">♡</div>
+<div class="doodle heart-2">♥</div>
+<div class="doodle star-1">★</div>
+<div class="doodle star-2">☆</div>
+<div class="doodle smile-x">XP</div>
 
 <div id="contactMenu" class="side-nav">
-<a href="javascript:void(0)" style="font-size:40px;" onclick="closeNav()">&times;</a>
+<a href="javascript:void(0)" style="font-size:40px; border:none;" onclick="closeNav()">&times;</a>
 <a href="#hair" onclick="closeNav()">HAIR</a>
 <a href="#nails" onclick="closeNav()">NAILS</a>
 <a href="#lashes" onclick="closeNav()">LASHES</a>
@@ -107,65 +151,64 @@ transition: 0.5s; padding-top: 60px; text-align: left; overflow-x: hidden;
 <a href="#links" onclick="closeNav()">SOCIALS</a>
 </div>
 
-<div class="header-bar" onclick="openNav()" style="cursor:pointer;">MENU // THEGIRLZ.INC // CLICK FOR CONTACT</div>
+<div class="header-bar" onclick="openNav()" style="cursor:pointer;">SYSTEM_v8.0 // THEGIRLZ.INC // MENU</div>
 
 <h1 class="brand-title">THE GIRLZ</h1>
 
 <div id="hair" class="section-container">
 <div class="service-flex">
 <h2 class="service-main-title">HAIR</h2>
-<ul class="sub-services-list">
-<li>BRAIDS</li>
-<li>HAIR DYE</li>
-<li>EXTENSIONS</li>
-<li>HAIRSTYLES</li>
-</ul>
+<div class="sub-services-list">
+<a href="#">→ BRAIDS</a>
+<a href="#">→ HAIR DYE</a>
+<a href="#">→ EXTENSIONS</a>
+<a href="#">→ HAIRSTYLES</a>
+</div>
 </div>
 </div>
 
 <div id="nails" class="section-container">
 <div class="service-flex">
 <h2 class="service-main-title">NAILS</h2>
-<ul class="sub-services-list">
-<li>3D ART</li>
-<li>CUSTOM SETS</li>
-<li>CHARMS</li>
-</ul>
+<div class="sub-services-list">
+<a href="#">→ 3D ART</a>
+<a href="#">→ CUSTOM SETS</a>
+<a href="#">→ CHARMS & GEMS</a>
+</div>
 </div>
 </div>
 
 <div id="lashes" class="section-container">
 <div class="service-flex">
 <h2 class="service-main-title">LASHES</h2>
-<ul class="sub-services-list">
-<li>CLUSTERS</li>
-<li>LIFTS</li>
-<li>EXTENSIONS</li>
-</ul>
+<div class="sub-services-list">
+<a href="#">→ CLUSTERS</a>
+<a href="#">→ LASH LIFTS</a>
+<a href="#">→ EXTENSIONS</a>
+</div>
 </div>
 </div>
 
 <div id="us" class="section-container">
-<h2 style="font-family:'Sedgwick Ave Display'; font-size: 50px;">US!</h2>
+<h2 style="font-family:'Sedgwick Ave Display'; font-size: 50px; color: #ff00ff;">THE CREW</h2>
 <div class="roster-grid">
-<div class="profile-card"><div class="pfp-placeholder"></div><div style="font-family:'Sedgwick Ave Display'">SAMI</div><a href="#" style="font-size:10px; color:#00ffff;">@sami.insta</a></div>
-<div class="profile-card"><div class="pfp-placeholder"></div><div style="font-family:'Sedgwick Ave Display'">SCAR</div><a href="#" style="font-size:10px; color:#00ffff;">@scar.insta</a></div>
-<div class="profile-card"><div class="pfp-placeholder"></div><div style="font-family:'Sedgwick Ave Display'">ARI</div><a href="#" style="font-size:10px; color:#00ffff;">@ari.insta</a></div>
-<div class="profile-card"><div class="pfp-placeholder"></div><div style="font-family:'Sedgwick Ave Display'">PHOEBE</div><a href="#" style="font-size:10px; color:#00ffff;">@phoebe.insta</a></div>
-<div class="profile-card"><div class="pfp-placeholder"></div><div style="font-family:'Sedgwick Ave Display'">MEMBER_5</div><a href="#" style="font-size:10px; color:#00ffff;">@thegirlz.inc</a></div>
+<div class="profile-card"><div class="pfp-placeholder"></div><div style="font-family:'Sedgwick Ave Display'">SAMI</div><a href="#" style="font-size:10px; color:#00ffff; text-decoration:none;">@sami.tag</a></div>
+<div class="profile-card"><div class="pfp-placeholder"></div><div style="font-family:'Sedgwick Ave Display'">SCAR</div><a href="#" style="font-size:10px; color:#00ffff; text-decoration:none;">@scar.tag</a></div>
+<div class="profile-card"><div class="pfp-placeholder"></div><div style="font-family:'Sedgwick Ave Display'">ARI</div><a href="#" style="font-size:10px; color:#00ffff; text-decoration:none;">@ari.tag</a></div>
+<div class="profile-card"><div class="pfp-placeholder"></div><div style="font-family:'Sedgwick Ave Display'">PHOEBE</div><a href="#" style="font-size:10px; color:#00ffff; text-decoration:none;">@phoebe.tag</a></div>
 </div>
 </div>
 
 <div id="links" class="links-box">
-<h2 style="font-family:'Orbitron';">CONNECT</h2>
-<p style="color:#fff;">PH: 555-0123</p>
+<h2 style="font-family:'Orbitron'; color: #00ffff;">STAY CONNECTED</h2>
+<p style="color:#fff; font-family:'VT323'; font-size:24px;">PH: 555-0123</p>
 <a href="#" class="main-link">INSTAGRAM</a>
 <a href="#" class="main-link">TIKTOK</a>
 <a href="#" class="main-link">FACEBOOK</a>
 <a href="#" class="main-link">YOUTUBE</a>
 </div>
 
-<footer>★ ALL RIGHTS RESERVED // STAY GRUNGE ★</footer>
+<footer>★ &copy; 2026 THEGIRLZ.INC // STAY GRUNGE // ♡ ★</footer>
 
 <script>
 function openNav() { document.getElementById("contactMenu").style.width = "280px"; }
@@ -174,4 +217,5 @@ function closeNav() { document.getElementById("contactMenu").style.width = "0"; 
 
 </body>
 </html>
+
 
